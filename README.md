@@ -1,8 +1,8 @@
-Proyecto Final CoderHouse
+Tercera Pre Entrega CoderHouse
 
 -------------------------------------------
 
-Dentro de este directorio encontrarán los archivos correspondientes al proyecto, los cuales pueden ser ejecutados con el comando "python manage.py runserver" parados sobre el directorio raíz del proyecto.
+Dentro de este directorio encontrarán los archivos correspondientes al entrega, los cuales pueden ser ejecutados con el comando "python manage.py runserver" parados sobre el directorio raíz del proyecto.
 
 Credenciales de usuario admin Django: Diego
 ricardo01 - la contraseña 
