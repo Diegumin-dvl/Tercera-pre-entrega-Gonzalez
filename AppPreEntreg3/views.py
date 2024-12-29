@@ -6,6 +6,8 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth import login,logout,authenticate
 from django.contrib.auth.hashers import make_password
+from django.shortcuts import redirect
+from django.contrib.sessions.models import Session
 
 def superadmin_required(view_func):
     def wrapper(request, *args, **kwargs):
@@ -320,3 +322,10 @@ def agregarAvatar(request):
       else: 
             miFormulario= AvatarFormulario() #Formulario vacio para construir el html.
       return render(request, "AppPreEntreg3/agregarAvatar.html", {"miFormulario":miFormulario})
+def custom_logout(request):
+    print("paso 1")
+    logout(request)
+    print ("paso 2")
+    #request.session.flush()
+    print("paso 3")
+    return redirect('Login')
